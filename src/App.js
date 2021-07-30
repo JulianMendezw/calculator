@@ -1,25 +1,13 @@
 import './App.css';
 import Select from 'react-select';
 import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
+import ExchangeIcon from './Exchange_icon';
 
 const options = [
   { value: 'BTC', label: 'BTC 0.1' },
   { value: 'PVU', label: 'PVU 1.9' },
   { value: 'BNB', label: 'BNB 5.0' }
 ];
-
-const useStyles = makeStyles({
-  root: {
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-    border: 0,
-    borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    color: 'white',
-    height: 48,
-    padding: '0 30px',
-  },
-});
 
 
 
@@ -64,6 +52,9 @@ function App() {
               onChange={onDropdownChange}
             />
           </div>
+
+          <ExchangeIcon />
+
           <div style={{ width: '120px', margin: '0 20px' }}>
             <Select
               options={options}
