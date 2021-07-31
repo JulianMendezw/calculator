@@ -1,8 +1,5 @@
 import './App.css';
 import Select from 'react-select';
-import Button from '@material-ui/core/Button';
-import ExchangeIcon from './ExchangeIcon';
-import CurrencyRow from './CurrencyConverter';
 
 const options = [
 	{ value: 'BTC', label: 'BTC 0.1' },
